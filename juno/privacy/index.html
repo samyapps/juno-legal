@@ -28,14 +28,17 @@
   Firebase Authentication.</p>
 
   <h3>b) Baby care records you enter</h3>
-  <p>Feeding, sleep, diaper changes, medicine names and doses, temperature readings, growth measurements
-  (weight, height), notes, and the dates and times of these entries. This may include
+  <p>Feeding, sleep, diaper changes (and whether a diaper was wet, dirty or both), medicine names and doses,
+  temperature readings, growth measurements (weight, height), notes, and the dates and times of these entries.
+  If you fill in the baby profile, we also store the name you give for yourself, your baby's name, date of
+  birth, sex, and birth weight and length (all optional except the baby's name and date of birth). This may include
   <strong>health-related information about your child</strong>. These records are stored in Google Cloud
   Firestore so they are available after reinstalling or on a new device.</p>
 
   <h3>c) AI assistant</h3>
-  <p>When you ask the AI assistant a question, the text of your question and your app language are sent to
-  our server and to Google's Gemini API to generate an answer. <strong>We do not store the content of your
+  <p>When you ask the AI assistant a question, the text of your question, your app language and, if you set
+  a baby profile, your baby's age in days (never the name) are sent to our server and to Google's Gemini API
+  to generate an answer. <strong>We do not store the content of your
   questions or the answers on our servers.</strong> We only store how many questions you asked on the current
   day, to apply the daily limit. Please do not include names or other identifying details in your questions.</p>
 
@@ -48,6 +51,9 @@
   <p>Agenda/calendar entries, milestones (including any photos you attach – these are <strong>not
   uploaded</strong>), favourite sounds, reminders, and language/theme settings are stored only on your
   device.</p>
+  <p>PDF reports are created on your device and are only shared where you choose to send them. To draw
+  the text, the app downloads free fonts from Google Fonts the first time you create a report; this request
+  does not include any of your data.</p>
 
   <h3>f) Technical data</h3>
   <p>Our cloud provider automatically records technical logs (for example IP address, time of request,
