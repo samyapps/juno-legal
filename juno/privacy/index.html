@@ -42,6 +42,17 @@
   questions or the answers on our servers.</strong> We only store how many questions you asked on the current
   day, to apply the daily limit. Please do not include names or other identifying details in your questions.</p>
 
+  <h3>Family sharing</h3>
+  <p>A parent can invite another parent or a caregiver (for example a nanny) to a baby profile with a
+  single-use invite code. People you invite see that baby's data in their own Juno app, and their name is
+  shown next to the entries they add. <strong>Parents</strong> see everything. <strong>Caregivers</strong> only
+  see the last 48 hours of care logs and the Cry Helper; they cannot see growth measurements, PDF reports,
+  notes on entries or older history. A parent can remove anyone at any time, and anyone can leave. To send
+  family alerts (for example "Ayşe: Feed · 14:20"), we store a push token, the app language and the time
+  zone of each signed-in device and send the alert through Firebase Cloud Messaging; alerts can be turned
+  off in the app. If the owner of a shared baby deletes their account, they can hand the baby over to another
+  parent; otherwise the baby's data is deleted for everyone.</p>
+
   <h3>d) Purchases</h3>
   <p>Subscriptions are processed by Apple (App Store) or Google (Google Play). We never receive your payment
   card details. Our subscription provider RevenueCat receives your purchase information and user ID so that
@@ -174,6 +185,15 @@
     sunucumuza ve Google Gemini API'ye gönderilir. <strong>Soru ve cevapların içeriğini sunucularımızda
     saklamayız</strong>; yalnızca günlük limit için o gün kaç soru sorduğunuzu tutarız. Lütfen sorularınıza
     isim veya kimliğinizi belirleyen bilgiler yazmayın.</li>
+    <li><strong>Aile paylaşımı:</strong> bir ebeveyn, tek kullanımlık bir davet koduyla başka bir ebeveyni ya da
+    bir bakıcıyı (örneğin dadı) bebek profiline davet edebilir. Davet ettiğiniz kişiler o bebeğin verilerini kendi
+    Juno uygulamalarında görür; ekledikleri kayıtların yanında adları görünür. <strong>Ebeveynler</strong> her şeyi
+    görür. <strong>Bakıcılar</strong> yalnızca son 48 saatin bakım kayıtlarını ve Ağlama Asistanı'nı görür; büyüme
+    ölçümlerini, PDF raporları, kayıt notlarını ve eski geçmişi göremez. Ebeveyn herkesi istediği zaman
+    çıkarabilir, herkes ayrılabilir. Aile bildirimleri (örneğin "Ayşe: Beslenme · 14:20") için oturum açılmış her
+    cihazın bildirim anahtarını, uygulama dilini ve saat dilimini saklar, bildirimi Firebase Cloud Messaging ile
+    göndeririz; bildirimler uygulamadan kapatılabilir. Paylaşılan bebeğin sahibi hesabını silerse bebeği başka bir
+    ebeveyne devredebilir; aksi halde bebeğin verileri herkes için silinir.</li>
     <li><strong>Satın alma:</strong> abonelikler Apple veya Google tarafından işlenir; kart bilgilerinizi
     asla almayız. RevenueCat, Premium erişimini açabilmemiz için satın alma bilgisini ve kullanıcı kimliğinizi
     alır.</li>
